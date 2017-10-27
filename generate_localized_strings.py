@@ -92,7 +92,6 @@ def MultiFileFind(pattern, file_globs):
     for i in ere_posix.finditer(out):
         key = i.group(1)
         description = key
-        print("len", len(i.groups()))
         if len(i.groups()) >= 2:
             description = i.group(2)
         records.append({
